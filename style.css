@@ -40,7 +40,15 @@ nav ul li{
 }
 .container{
     
-    min-height: calc(100vh - 65px);
+    min-height: 70vh;
+    background-color: black;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    margin: 23px auto;
+    width: 70%;
+border-radius: 12px;
+padding: 25px;
 }
 .bottom{
     position: sticky;
@@ -51,11 +59,21 @@ nav ul li{
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
+    flex-direction: column;
     
+}
+.icons{
+    padding:12px;
+    margin-top: 8px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
 }
 #progressbar{
     width: 70vw;
-    -webkit-appearance: none;
+    cursor: pointer;
     height: 6px;
     border-radius: 45px;
     background: white;
