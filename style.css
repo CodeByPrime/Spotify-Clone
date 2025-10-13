@@ -46,7 +46,7 @@ nav ul li{
     font-family: 'Poppins', sans-serif;
     display: flex;
     margin: 23px auto;
-    width: 70%;
+    width: 80%;
 border-radius: 12px;
 padding: 25px;
 background-image: url('music_cover.jpg');
@@ -89,7 +89,7 @@ background-size: cover;
     height: 50px;
    background-color: white;
    margin: 8px 0;
-    width: 85%;
+    
     color: #000;
     justify-content: space-between;
     align-items: center;
@@ -102,4 +102,8 @@ background-size: cover;
 }
 .timestamp{
     margin-right: 25px;
+}
+.timestamp i{
+   
+    cursor: pointer;
 }
