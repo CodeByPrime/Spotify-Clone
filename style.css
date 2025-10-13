@@ -72,6 +72,7 @@ background-size: cover;
     gap: 20px;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 #progressbar{
     width: 70vw;
