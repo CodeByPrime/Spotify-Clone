@@ -107,3 +107,21 @@ background-size: cover;
    
     cursor: pointer;
 }
+.songitemcontainer{
+    margin-top: 20px;
+}
+.songinfo{
+    position: absolute;
+    left: 13vw;
+}
+.songinfo span{
+    margin-bottom: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+.songinfo img{
+    
+    top: 60px;
+    opacity: 1;
+    transition:  opacity 0.3s ease-in-out;
+}
