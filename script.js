@@ -32,7 +32,6 @@ let songs = [
 masterPlay.addEventListener("click", () => {
   if (audioElement.paused || audioElement.currentTime <= 0) {
     audioElement.play();
-
     masterPlay.classList.remove("fa-play-circle");
     masterPlay.classList.add("fa-pause-circle");
     gif.style.opacity = 1;
@@ -43,6 +42,11 @@ masterPlay.addEventListener("click", () => {
     gif.style.opacity = 0;
   }
 });
-myProgressBar.addEventListener("timeupdate", () => {
+audioElement.addEventListener("timeupdate", () => {
   console.log("timeupdate");
+  // Update progress bar value based on audio playback
+  let progress = parseInt(
+    (audioElement.currentTime / audioElement.duration) * 100
+  );
+  myProgressBar.value = progress;
 });
